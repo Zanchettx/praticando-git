@@ -12,7 +12,7 @@ __
 
 | git init | -- Cria um novo repositório no git
 
-| git status | - Verifica o status do repositório
+| git status | - Verifica o status do repositório | Verde: Pronto para ser comitado 
 __________________________________
 
 2 - Como adicionar arquivos ao controle de versão?
@@ -30,7 +30,7 @@ ______________________________________________________________________
 
 git config --global user.email "Email que foi colocado na criação da conta do git"
 
- git config --global user.name "Johnny Alexandre" -- Quando enviar a versão, o nome estará atrelado a versão.
+git config --global user.name "Johnny Alexandre" -- Quando enviar a versão, o nome estará atrelado a versão.
 
 4 - Como enviar alterações usando git push
 
@@ -39,6 +39,10 @@ git push - Envia a versão do código para o servidor da nuvem
 git remote add origin "Link do repositório no github" -- Define para onde o código será enviado
 
 --set-upstream origin master -- envia o código para a master
+
+5 - Ciclo de atualização do código
+
+
 
 
 OBSERVAÇÕES
