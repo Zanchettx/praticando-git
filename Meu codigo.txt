@@ -17,28 +17,45 @@ __________________________________
 
 2 - Como adicionar arquivos ao controle de versão?
 
-| git add "nome-do-arquivo" - Prepara um arquivo para ser adicionado ao controle de versão 
+| git add "nome-do-arquivo" -- Prepara um arquivo para ser adicionado ao controle de versão 
 
-| git add . - Adiciona todos os arquivos que não foram adicionados
+| git add . -- Adiciona todos os arquivos que não foram adicionados
 ______________________________________________________________________
 
 3 - Como criar versões do código com commit
 
+| git commit -m "MensagemFalandoSobreOQueFoiFeito" -- Cria a primeira versão do código (o -m é de mensagem), colocar a primeira versão como "commit inicial" é uma boa prática.
 
+----------- Configurar o git -----------
 
+git config --global user.email "Email que foi colocado na criação da conta do git"
+
+ git config --global user.name "Johnny Alexandre" -- Quando enviar a versão, o nome estará atrelado a versão.
+
+4 - Como enviar alterações usando git push
+
+git push - Envia a versão do código para o servidor da nuvem 
+
+git remote add origin "Link do repositório no github" -- Define para onde o código será enviado
+
+--set-upstream origin master -- envia o código para a master
 
 
 OBSERVAÇÕES
 
-Commit - Um commit é uma versão do código desenvolvido
+Commit -- Um commit é uma versão do código desenvolvido
 
-Untracked file - O arquivo não foi adicionado ao controle de versão 
+Untracked file -- O arquivo não foi adicionado ao controle de versão 
 
 O comando git add adiciona um arquivo por vez (O que não é recomendável de se fazer em um projeto com muitos arquivos)
 
 GitHub - Repositório de projetos baseado no Git
 
+Para realizar um upload de código para um repositório, primeiro é preciso cofigurar o link do repositório e depois definir para qual branch enviar o código
 
-Praticando Git através do tutorial:
+Branch - Divisões diferentes do código que estão sendo versionadas de forma separada. (Inicialmente enviamos para a Master)
+
+
+Praticando Git através do curso:
 
 https://www.youtube.com/watch?v=kB5e-gTAl_s
