@@ -1,0 +1,44 @@
+Olá, meu nome é Johnny Alexandre!
+
+Estou estudando para me tornar um Dev FullStack Java Júnior, cursando ADS na FIAP (2° Semestre) e fazendo o curso de programação do Instituto PROA 
+
+
+ ANOTAÇÕES DO APRENDIZADO
+____________________________  
+
+
+1 - Como inicializar um repositório?
+__
+
+| git init | -- Cria um novo repositório no git
+
+| git status | - Verifica o status do repositório
+__________________________________
+
+2 - Como adicionar arquivos ao controle de versão?
+
+| git add "nome-do-arquivo" - Prepara um arquivo para ser adicionado ao controle de versão 
+
+| git add . - Adiciona todos os arquivos que não foram adicionados
+______________________________________________________________________
+
+3 - Como criar versões do código com commit
+
+
+
+
+
+OBSERVAÇÕES
+
+Commit - Um commit é uma versão do código desenvolvido
+
+Untracked file - O arquivo não foi adicionado ao controle de versão 
+
+O comando git add adiciona um arquivo por vez (O que não é recomendável de se fazer em um projeto com muitos arquivos)
+
+GitHub - Repositório de projetos baseado no Git
+
+
+Praticando Git através do tutorial:
+
+https://www.youtube.com/watch?v=kB5e-gTAl_s
