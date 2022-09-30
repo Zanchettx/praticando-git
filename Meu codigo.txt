@@ -64,6 +64,15 @@ git branch staging || Brache criada para receber atualizações e depois ser imp
 
 git checkout staging || Muda para o versionamento da branche (staging)
 
+git checkout -b NovaBranch master || Cria uma nova branch com base na branch principal
+
+8 - Git Merge - Como unir o código
+
+git pull || Traz as atualizações do servidor para a máquina local - depois realiza o git merge
+
+git merge NomeDaBranche || A branche NomeDaBranche é a branche que contém as novas atualizações, o git merge "puxa" essas atualizações.
+
+
 ---------------------------------------------------------------------------------------------------------------------------------- OBSERVAÇÕES --------------------------
 
 Commit -- Um commit é uma versão do código desenvolvido
@@ -79,6 +88,29 @@ Para realizar um upload de código para um repositório, primeiro é preciso cof
 Branch - Divisões diferentes do código que estão sendo versionadas de forma separada. (Inicialmente enviamos para a Master)
 
 Para enviar uma nova atualização de código a operação a ser realizada é:  | git status - git add . - git commit -m "NomeDaAtualização" - git push |
+
+O comando git merge é utilizado para unir o código novo - funcionalidade - (de uma nova branche) para a branche principal
+
+Como unir o código novo com a branch principal? Exemplo:
+
+Antes de fazer o merge, é preciso puxar as atualizações do servidor para o servidor local para ter certeza de que se está unindo os códigos nas versões mais atuais possíveis, isso é feito com o comando git pull
+
+1° - git pull da branch principal - Traz atualizações do servidor para a máquina atual
+
+2° - gerar uma nova branch a partir da branch principal
+
+3° - Trabalhar e adicionar novas funcionalidades na nova branch criada
+
+4° - Finalizar o trabalho na branch temporária
+
+5° - Git checkout na branch principal (Mudar para a branch que será recebida a nova funcionalidade)
+
+6° - Git pull
+
+7° - Mergiar (unir) o código da branch temporária com a branch principal (depois de testar)
+
+8° - Git push da branch principal
+
 
 
 Praticando Git através do curso:

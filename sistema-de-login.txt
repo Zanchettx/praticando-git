@@ -1,0 +1,1 @@
+Exemplo dado no curso para a utilização do comando git merge
