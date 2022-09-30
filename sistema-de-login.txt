@@ -1,1 +1,5 @@
 Exemplo dado no curso para a utilização do comando git merge
+
+digite seu email
+digite sua senha
+digite sua idade
