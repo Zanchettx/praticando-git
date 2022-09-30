@@ -3,7 +3,7 @@ Olá, meu nome é Johnny Alexandre!
 Estou estudando para me tornar um Dev FullStack Java Júnior, cursando ADS na FIAP (2° Semestre) e fazendo o curso de programação do Instituto PROA 
 
 
- ANOTAÇÕES DO APRENDIZADO
+ ANOTAÇÕES DO APRENDIZADO - Nova branch 
 ____________________________  
 
 
@@ -26,7 +26,7 @@ ______________________________________________________________________
 
 | git commit -m "MensagemFalandoSobreOQueFoiFeito" -- Cria a primeira versão do código (o -m é de mensagem), colocar a primeira versão como "commit inicial" é uma boa prática.
 
------------ Configurar o git -----------
+----------------------------------------------------------------------------------------------------------------------------- Configurar o git -----------
 
 git config --global user.email "Email que foi colocado na criação da conta do git"
 
@@ -42,10 +42,29 @@ git remote add origin "Link do repositório no github" -- Define para onde o có
 
 5 - Ciclo de atualização do código
 
+Os passos para a atualização de um código são:
+1 - git status || Verificar os status dos arquivos, se foram enviados ou não.
+2 - git add . || Adicionar os arquivos a versão deixando-os aptos para o commit
+3 - git commit -m "NomeDaATT" || Cria uma nova versão do projeto
+4 - git push || Envia a versão do código para o servidor da Nuvem
 
+6 - Como verificar histórico de atualizações
 
+git reflog - A versão 0 sempre vai ser a mais recente (Quando utilizado esse comando, vai aparecer todos os commits feitos até o momento, seu nome e id)
 
-OBSERVAÇÕES
+7 - Como navegar entre versões do seu código
+
+git reset --hard 1863fs || Volta para a versão do código do id (o id nesse exemplo seria o 1863fs)
+
+8 - O que são branches e como criar uma
+
+git branch || Exibe os branches disponíveis
+
+git branch staging || Brache criada para receber atualizações e depois ser implementada na branch principal, o nome de uma branche pode ser o nome da nova funcionalidade.
+
+git checkout staging || Muda para o versionamento da branche (staging)
+
+---------------------------------------------------------------------------------------------------------------------------------- OBSERVAÇÕES --------------------------
 
 Commit -- Um commit é uma versão do código desenvolvido
 
@@ -58,6 +77,8 @@ GitHub - Repositório de projetos baseado no Git
 Para realizar um upload de código para um repositório, primeiro é preciso cofigurar o link do repositório e depois definir para qual branch enviar o código
 
 Branch - Divisões diferentes do código que estão sendo versionadas de forma separada. (Inicialmente enviamos para a Master)
+
+Para enviar uma nova atualização de código a operação a ser realizada é:  | git status - git add . - git commit -m "NomeDaAtualização" - git push |
 
 
 Praticando Git através do curso:
