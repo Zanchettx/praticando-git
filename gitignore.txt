@@ -1,0 +1,1 @@
+arquivo criado para a prática da utilização do gitignore

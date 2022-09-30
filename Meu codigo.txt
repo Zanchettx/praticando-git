@@ -66,11 +66,33 @@ git checkout staging || Muda para o versionamento da branche (staging)
 
 git checkout -b NovaBranch master || Cria uma nova branch com base na branch principal
 
-8 - Git Merge - Como unir o código
+9 - Git Merge - Como unir o código
 
 git pull || Traz as atualizações do servidor para a máquina local - depois realiza o git merge
 
 git merge NomeDaBranche || A branche NomeDaBranche é a branche que contém as novas atualizações, o git merge "puxa" essas atualizações.
+
+10 - Pull request - Um merge democrático
+
+Após feito o git push, clicar em "Compare & pull request" no GitHub
+
+11 - GitIgnore
+
+touch .gitignore || Cria um arquivo txt do .gitignore e lá você coloca o caminho dos arquivos que devem ser ignorados, ainda é necessário adicionar esse .gitignore no projeto da branch principal.
+
+Resumo:
+
+git init                                                                  ---> inicializa um novo repositório
+git add .                                                              ---> adiciona os arquivos atuais ao próximo commit
+git status                                                            ---> verificar o status atual do repositório git
+git commit -m "mensagem do commit"         ---> cria um novo commit com uma mensagem
+git push                                                              ---> envia as atualizações para a nuvem na branch atualmente ativa
+git branch                                                          ---> permite listar e ver qual branch está ativa atualmente
+git checkout nome-da-branch                         ---> permite mudar para uma nova branch
+git checkout -b "nome da branch de origem" "nome da nova branch"                                        ---> permite mudar e criar uma nova branch com base em outra
+git merge "branch a receber merge"             ---> permite fazer o merge da branch ativa atualmente com outra branch
+git pull                                                                ---> atualiza a branch atualmente ativa
+
 
 
 ---------------------------------------------------------------------------------------------------------------------------------- OBSERVAÇÕES --------------------------
